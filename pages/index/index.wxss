@@ -1,22 +1,123 @@
 /**index.wxss**/
-.container {
+page {
   width: 100%;
-  height: 350rpx;
+  height: 100%;
+  background-color: rgb(245, 245, 245);
+}
+
+.info-container {
+  display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  margin: 30rpx 0;
+  padding: 30rpx 0;
+  background-color: rgb(254, 254, 254);
+}
+
+.info-item {
+  width: 300rpx;
+  text-align: center;
+}
+
+.score-display {
+  width: 250rpx;
+  height: 250rpx;
+  padding: 50rpx 0 0 50rpx;
+  border-radius: 50%;
+  color: rgb(254, 254, 254);
+  background-color: red;
+}
+
+.score-display .score-gauge {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  line-height: 200rpx;
+  font-size: 60rpx;
+  color: red;
+  background-color: rgb(254, 254, 254);
+}
+
+.warning-display {
+  width: 250rpx;
+  height: 250rpx;
+  padding: 50rpx 0 0 50rpx;
+}
+
+.warning-display .warning-number {
+  line-height: 200rpx;
+  font-size: 80rpx;
+}
+
+.info-item .text {
+  margin-top: 30rpx;
+  color: #ddd;
+}
+
+.button-container {
+  padding: 15rpx 0;
+  background-color: rgb(254, 254, 254);
+}
+
+.button-container .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 25rpx 0;
+}
+
+.button-container .row .button-block {
+  position: relative;
+  width: 350rpx;
+  height: 180rpx;
+  border-radius: 20rpx;
+}
+
+.button-container .row .button-block .button-text {
+  margin: 40rpx 0 0 20rpx;
+  font-weight: 700;
+  color: white;
+}
+
+.button-container .row .button-block .detail {
+  margin: 10rpx 0 0 20rpx;
+  font-size: 20rpx;
+  color: white;
+}
+
+.button-container .row .button-block .image {
+  position: absolute;
+  right: -30rpx;
+  top: 10rpx;
+  width: 150rpx;
+  height: 150rpx;
+  opacity: 0.3;
+}
+
+.button-block.red {
+  background-color: rgb(252, 157, 154);
+}
+
+.button-block.flesh {
+  background-color: rgb(249, 205, 173);
+}
+
+.button-block.light-green {
+  background-color: rgb(200, 200, 169);
+}
+
+.button-block.green {
+  background-color: rgb(131, 175, 155);
+}
+
+.button-block.orange {
+  background-color: rgb(220, 87, 18);
+}
+
+.button-block.yellow {
+  background-color: rgb(229, 131, 8);
 }
 ec-canvas {
-  width:400rpx;
+  width: 400rpx;
   height: 350rpx;
-}
-.score {
-  font-size: 40rpx;
-  height: 200rpx;
-  width: 250rpx;
-  color:grey;
-}
-.separate {
-  width: 600rpx;
-  height: 50rpx;
-  left: 300rpx;
-  background-color:grey;
 }

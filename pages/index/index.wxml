@@ -1,8 +1,49 @@
-<!--index.wxml-->
+<!-- index.wxml -->
 <view class="container">
-  <ec-canvas id="mychart-dom-gauge" canvas-id="mychart-gauge" ec="{{ ec }}"></ec-canvas>
-  <view class="score">本周得分</view>
+  <view class="info-container">
+    <view class="info-item">
+      <view class="score-display">
+        <view class="score-gauge">40</view>
+        <!-- <ec-canvas id="mychart-dom-gauge" canvas-id="mychart-gauge" ec="{{ ec }}"></ec-canvas> -->
+      </view>
+      <view class="text">昨日评分</view>
+    </view>
+    <view class="info-item">
+      <view class="warning-display">
+        <text class="warning-number">5</text>
+        次
+      </view>
+      <view class="text">上周警告</view>
+    </view>
+  </view>
+  <view class="button-container">
+    <view class="row">
+      <view class="button-block red">
+        <view class="button-text">环境信息</view>
+        <view class="detail">水流、压力、温度、湿度、门磁</view>
+        <image class="image" src="/images/environment.png" />
+      </view>
+      <view class="button-block flesh">
+        <view class="button-text">行为信息</view>
+        <view class="detail">睡眠、离家、洗漱、用餐、如厕</view>
+        <image class="image" src="/images/behavior.png" />
+      </view>
+    </view>
+    <view class="row">
+      <view class="button-block green">
+        <view class="button-text">报警信息</view>
+        <view class="detail">门磁报警、水流报警、煤气报警</view>
+        <image class="image" src="/images/alert.png" />
+      </view>
+      <view class="button-block light-green">
+        <view class="button-text">评分详情</view>
+        <view class="detail">每日评分、评分状态</view>
+        <image class="image" src="/images/rate.png" />
+      </view>
+    </view>
+    <view class="row">
+      <view class="button-block orange"></view>
+      <view class="button-block yellow"></view>
+    </view>
+  </view>
 </view>
-<view class="separate"></view>
-
-

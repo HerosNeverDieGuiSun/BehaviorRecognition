@@ -1,14 +1,10 @@
 {
-  "pages":[
-    "pages/login/index",
-    "pages/index/index",
-    "pages/line/index"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "pages": ["pages/login/index", "pages/index/index", "pages/line/index"],
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "智慧服饰信息面板",
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#ccc",
@@ -20,13 +16,13 @@
         "text": "首页",
         "pagePath": "pages/index/index",
         "iconPath": "images/home.png",
-        "selectedIconPath": "images/home-actived.png"
+        "selectedIconPath": "images/home-active.png"
       },
       {
         "text": "我的",
         "pagePath": "pages/line/index",
         "iconPath": "images/profile.png",
-        "selectedIconPath": "images/profile-actived.png"
+        "selectedIconPath": "images/profile-active.png"
       }
     ]
   }
