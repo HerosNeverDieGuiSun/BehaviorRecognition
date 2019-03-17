@@ -2,10 +2,7 @@
   "pages":[
     "pages/login/index",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/line/index",
-    "pages/bar/index",
-    "pages/gauge/index"
+    "pages/line/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -21,7 +18,7 @@
     "list": [
       {
         "text": "首页",
-        "pagePath": "pages/gauge/index",
+        "pagePath": "pages/index/index",
         "iconPath": "images/home.png",
         "selectedIconPath": "images/home-actived.png"
       },

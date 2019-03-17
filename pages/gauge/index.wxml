@@ -1,8 +1,0 @@
-<!--index.wxml-->
-<view class="container">
-  <ec-canvas id="mychart-dom-gauge" canvas-id="mychart-gauge" ec="{{ ec }}"></ec-canvas>
-  <view class="score">本周得分</view>
-</view>
-<view class="separate"></view>
-
-

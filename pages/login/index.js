@@ -15,7 +15,7 @@ Page({
                           // that.queryUsreInfo();
                           //用户已经授权过
                           wx.switchTab({
-                              url: '../gauge/index'
+                              url: '../index/index'
                           })
                       }
                   });
@@ -30,7 +30,7 @@ Page({
           //插入登录的用户的相关信息到数据库
          
           wx.switchTab({
-              url: '../gauge/index'
+              url: '../index/index'
           })
       } else {
           //用户按了拒绝按钮

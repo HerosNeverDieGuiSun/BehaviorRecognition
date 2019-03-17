@@ -1,6 +1,8 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-  <van-button type="primary" bindtap="test">按钮</van-button>
-  </view>
+  <ec-canvas id="mychart-dom-gauge" canvas-id="mychart-gauge" ec="{{ ec }}"></ec-canvas>
+  <view class="score">本周得分</view>
 </view>
+<view class="separate"></view>
+
+
