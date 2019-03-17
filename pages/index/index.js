@@ -44,6 +44,9 @@ Page({
             userInfo: res.userInfo,
             hasUserInfo: true
           })
+          wx.navigateTo({
+            url: '../index/index'
+          })
         }
       })
     }
@@ -54,6 +57,10 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
+    }),
+    wx.navigateTo({
+      url: '../bar/index'
     })
+    console.log("sss")
   }
 })

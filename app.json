@@ -1,9 +1,11 @@
 {
   "pages":[
+    "pages/login/index",
     "pages/index/index",
     "pages/logs/logs",
     "pages/line/index",
-    "pages/bar/index"
+    "pages/bar/index",
+    "pages/gauge/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -19,13 +21,13 @@
     "list": [
       {
         "text": "首页",
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/gauge/index",
         "iconPath": "images/home.png",
         "selectedIconPath": "images/home-actived.png"
       },
       {
         "text": "我的",
-        "pagePath": "pages/bar/index",
+        "pagePath": "pages/line/index",
         "iconPath": "images/profile.png",
         "selectedIconPath": "images/profile-actived.png"
       }
