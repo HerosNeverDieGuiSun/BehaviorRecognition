@@ -2,11 +2,12 @@
 <view class="container">
   <view class="info-container">
     <view class="info-item">
-      <view class="score-display">
-        <view class="score-gauge">40</view>
-        <!-- <ec-canvas id="mychart-dom-gauge" canvas-id="mychart-gauge" ec="{{ ec }}"></ec-canvas> -->
-      </view>
-      <view class="text">昨日评分</view>
+      <!-- <view class="score-display">
+         <view class="score-gauge">40</view> 
+        
+      </view> -->
+      <ec-canvas class="score-display" id="mychart-dom-gauge" canvas-id="mychart-gauge" ec="{{ ec }}"></ec-canvas>
+      <view class="text1">昨日评分</view>
     </view>
     <view class="info-item">
       <view class="warning-display">

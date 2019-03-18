@@ -15,17 +15,12 @@ page {
 }
 
 .info-item {
-  width: 300rpx;
+  width: 370rpx;
   text-align: center;
 }
 
 .score-display {
-  width: 250rpx;
-  height: 250rpx;
-  padding: 50rpx 0 0 50rpx;
-  border-radius: 50%;
-  color: rgb(254, 254, 254);
-  background-color: red;
+  padding-bottom:300rpx;
 }
 
 .score-display .score-gauge {
@@ -50,7 +45,14 @@ page {
 }
 
 .info-item .text {
-  margin-top: 30rpx;
+  margin-top: -5rpx;
+  color: #ddd;
+}
+.info-item .text1 {
+  position: absolute;
+  left: 140rpx;
+  top: 376rpx;
+  margin-top: -20rpx;
   color: #ddd;
 }
 
@@ -118,6 +120,9 @@ page {
   background-color: rgb(229, 131, 8);
 }
 ec-canvas {
+  position: relative;
+  left: 0rpx;
+  top: -30rpx;
   width: 400rpx;
-  height: 350rpx;
+  height: 300rpx;
 }
