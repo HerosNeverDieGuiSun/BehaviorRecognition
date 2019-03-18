@@ -6,31 +6,56 @@ Page({
   data: {
     ec: {
       onInit: initChart
-    }
+    },
+    warningCount: 100,
+    cognitionState: true
+  },
+  onReady: function(e) {
+    let interval = 1000 / this.data.warningCount;
+    let currentDisplayCount = -1;
+    let destinationCount = this.data.warningCount;
+    setInterval(() => {
+      if (currentDisplayCount !== destinationCount) {
+        this.setData({
+          warningCount: ++currentDisplayCount
+        });
+      }
+    }, interval);
   }
 });
 
 function initChart(canvas, width, height) {
   const chart = echarts.init(canvas, null, {
-    width: 230,
-    height: 230
+    width: 200,
+    height: 200
   });
   canvas.setChart(chart);
 
   var option = {
-    backgroundColor: "#ffffff",
-    color: ["#37A2DA", "#32C5E9", "#67E0E3"],
     series: [
       {
         name: "上周得分",
         type: "gauge",
         axisLine: {
-          show: true,
           lineStyle: {
-            width: 18,
-            shadowBlur: 0,
-            color: [[0.4, "#fd666d"], [0.8, "#37a2da"], [1, "#67e0e3"]]
+            width: 10,
+            color: [[0.2, "#9b413b"], [0.8, "#72849a"], [1, "#a7c3af"]]
           }
+        },
+        axisTick: {
+          length: 10,
+          lineStyle: {
+            color: "auto"
+          }
+        },
+        splitLine: {
+          length: 15,
+          lineStyle: {
+            color: "auto"
+          }
+        },
+        detail: {
+          fontSize: "20"
         },
         data: [
           {

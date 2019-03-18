@@ -1,5 +1,5 @@
 {
-  "pages": ["pages/login/index", "pages/index/index", "pages/line/index"],
+  "pages": ["pages/login/login", "pages/index/index", "pages/line/line"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
@@ -20,7 +20,7 @@
       },
       {
         "text": "我的",
-        "pagePath": "pages/line/index",
+        "pagePath": "pages/line/line",
         "iconPath": "images/profile.png",
         "selectedIconPath": "images/profile-active.png"
       }

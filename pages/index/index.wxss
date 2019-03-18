@@ -5,58 +5,71 @@ page {
   background-color: rgb(245, 245, 245);
 }
 
+.container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .info-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 30rpx 0;
-  padding: 30rpx 0;
+  padding: 30rpx 10rpx;
   background-color: rgb(254, 254, 254);
 }
 
 .info-item {
   width: 370rpx;
+  height: 360rpx;
   text-align: center;
-}
-
-.score-display {
-  padding-bottom:300rpx;
-}
-
-.score-display .score-gauge {
-  width: 200rpx;
-  height: 200rpx;
-  border-radius: 50%;
-  line-height: 200rpx;
-  font-size: 60rpx;
-  color: red;
-  background-color: rgb(254, 254, 254);
 }
 
 .warning-display {
   width: 250rpx;
-  height: 250rpx;
+  height: 310rpx;
   padding: 50rpx 0 0 50rpx;
+  color: #666;
 }
 
 .warning-display .warning-number {
   line-height: 200rpx;
-  font-size: 80rpx;
+  font-size: 100rpx;
 }
 
 .info-item .text {
-  margin-top: -5rpx;
-  color: #ddd;
-}
-.info-item .text1 {
-  position: absolute;
-  left: 140rpx;
-  top: 376rpx;
-  margin-top: -20rpx;
+  margin-top: -50rpx;
+  font-size: 30rpx;
   color: #ddd;
 }
 
+.state-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30rpx;
+  font-size: 30rpx;
+  background-color: rgb(254, 254, 254);
+}
+
+.state-container .title {
+  color: #aaa;
+}
+
+.state-container icon {
+  vertical-align: middle;
+}
+
+.state-container .normal {
+  color: #a7c3af;
+}
+
+.state-container .abnormal {
+  color: #9b413b;
+}
+
 .button-container {
+  margin: 30rpx 0;
   padding: 15rpx 0;
   background-color: rgb(254, 254, 254);
 }

@@ -2,19 +2,26 @@
 <view class="container">
   <view class="info-container">
     <view class="info-item">
-      <!-- <view class="score-display">
-         <view class="score-gauge">40</view> 
-        
-      </view> -->
-      <ec-canvas class="score-display" id="mychart-dom-gauge" canvas-id="mychart-gauge" ec="{{ ec }}"></ec-canvas>
-      <view class="text1">昨日评分</view>
+      <ec-canvas id="mychart-dom-gauge" canvas-id="mychart-gauge" ec="{{ ec }}"></ec-canvas>
+      <view class="text">昨日评分</view>
     </view>
     <view class="info-item">
       <view class="warning-display">
-        <text class="warning-number">5</text>
+        <text class="warning-number">{{warningCount}}</text>
         次
       </view>
       <view class="text">上周警告</view>
+    </view>
+  </view>
+  <view class="state-container">
+    <view class="title">当前认知状态</view>
+    <view class="normal" wx:if="{{cognitionState}}">
+      <icon type="success" size="14" color="#a7c3af" />
+      正常
+    </view>
+    <view class="abnormal" wx:else>
+      <icon type="warn" size="14" color="#9b413b" />
+      异常
     </view>
   </view>
   <view class="button-container">
