@@ -10,7 +10,7 @@ Page({
     warningCount: 100,
     cognitionState: true
   },
-  onReady: function(e) {
+  onShow: function(e) {
     let interval = 1000 / this.data.warningCount;
     let currentDisplayCount = -1;
     let destinationCount = this.data.warningCount;
