@@ -33,8 +33,8 @@ Page({
 
 function initChart(canvas, width, height) {
   const chart = echarts.init(canvas, null, {
-    width: 200,
-    height: 200
+    width: width,
+    height: height
   });
   canvas.setChart(chart);
 

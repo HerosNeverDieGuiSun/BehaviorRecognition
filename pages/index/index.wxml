@@ -3,14 +3,14 @@
   <view class="info-container">
     <view class="info-item">
       <ec-canvas id="mychart-dom-gauge" canvas-id="mychart-gauge" ec="{{ ec }}"></ec-canvas>
-      <view class="text">昨日评分</view>
+      <view class="rate-text">昨日评分</view>
     </view>
     <view class="info-item">
       <view class="warning-display">
         <text class="warning-number">{{warningCount}}</text>
         次
       </view>
-      <view class="text">上周警告</view>
+      <view class="warning-text">上周警告</view>
     </view>
   </view>
   <view class="state-container">

@@ -1,37 +1,22 @@
 <view class="container">
-  <view class="title">环境信息</view>
-  <view class="swipe-tab-container">
-    <view class="swipe-tab-item {{currentTab == 0 ? 'on' : ''}}" data-current="0" bindtap="switchGraph">
+  <view class="tab-container">
+    <view class="tab-item {{currentTab == 0 ? 'on' : ''}}" data-current="0" bindtap="switchGraph">
       水流
     </view>
-    <view class="swipe-tab-item {{currentTab == 1 ? 'on' : ''}}" data-current="1" bindtap="switchGraph">
+    <view class="tab-item {{currentTab == 1 ? 'on' : ''}}" data-current="1" bindtap="switchGraph">
       压力
     </view>
-    <view class="swipe-tab-item {{currentTab == 2 ? 'on' : ''}}" data-current="2" bindtap="switchGraph">
+    <view class="tab-item {{currentTab == 2 ? 'on' : ''}}" data-current="2" bindtap="switchGraph">
       温度
     </view>
-    <view class="swipe-tab-item {{currentTab == 3 ? 'on' : ''}}" data-current="3" bindtap="switchGraph">
+    <view class="tab-item {{currentTab == 3 ? 'on' : ''}}" data-current="3" bindtap="switchGraph">
       湿度
     </view>
-    <view class="swipe-tab-item {{currentTab == 4 ? 'on' : ''}}" data-current="4" bindtap="switchGraph">
+    <view class="tab-item {{currentTab == 4 ? 'on' : ''}}" data-current="4" bindtap="switchGraph">
       门磁
     </view>
   </view>
-  <swiper class="swipe-box" indicator-dots="{{false}}" autoplay="{{false}}" current="{{currentTab}}" duration="{{500}}" bindchange="swipeGraph">
-    <swiper-item>
-      <view>水流信息</view>
-    </swiper-item>
-    <swiper-item>
-      <view>压力信息</view>
-    </swiper-item>
-    <swiper-item>
-      <view>温度信息</view>
-    </swiper-item>
-    <swiper-item>
-      <view>湿度信息</view>
-    </swiper-item>
-    <swiper-item>
-      <view>门磁信息</view>
-    </swiper-item>
-  </swiper>
+  <view class="main-container">
+    <ec-canvas class="info-graph" ec="{{ ec }}"></ec-canvas>
+  </view>
 </view>

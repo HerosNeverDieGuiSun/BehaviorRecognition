@@ -15,20 +15,24 @@ page {
   flex-direction: row;
   justify-content: space-evenly;
   margin: 30rpx 0;
-  padding: 30rpx 10rpx;
+  height: 410rpx;
   background-color: rgb(254, 254, 254);
 }
 
 .info-item {
   width: 370rpx;
-  height: 360rpx;
   text-align: center;
 }
 
+#mychart-dom-gauge {
+  width: 370rpx;
+  height: 370rpx;
+}
+
 .warning-display {
-  width: 250rpx;
-  height: 310rpx;
-  padding: 50rpx 0 0 50rpx;
+  height: 260rpx;
+  padding-top: 50rpx;
+  line-height: 260rpx;
   color: #666;
 }
 
@@ -37,10 +41,16 @@ page {
   font-size: 100rpx;
 }
 
-.info-item .text {
-  margin-top: -50rpx;
+.rate-text,
+.warning-text {
+  height: 100rpx;
+  line-height: 100rpx;
   font-size: 30rpx;
   color: #ddd;
+}
+
+.rate-text {
+  margin-top: -100rpx;
 }
 
 .state-container {
@@ -131,11 +141,4 @@ page {
 
 .button-block.yellow {
   background-color: rgb(229, 131, 8);
-}
-ec-canvas {
-  position: relative;
-  left: 0rpx;
-  top: -30rpx;
-  width: 400rpx;
-  height: 300rpx;
 }
