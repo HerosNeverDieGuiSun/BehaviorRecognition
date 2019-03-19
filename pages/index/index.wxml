@@ -26,12 +26,12 @@
   </view>
   <view class="button-container">
     <view class="row">
-      <view class="button-block red">
+      <view class="button-block red" bindtap="showInfoPage" data-url="environment_info">
         <view class="button-text">环境信息</view>
         <view class="detail">水流、压力、温度、湿度、门磁</view>
         <image class="image" src="/images/environment.png" />
       </view>
-      <view class="button-block flesh">
+      <view class="button-block flesh" bindtap="showInfoPage" data-url="behavior_info">
         <view class="button-text">行为信息</view>
         <view class="detail">睡眠、离家、洗漱、用餐、如厕</view>
         <image class="image" src="/images/behavior.png" />

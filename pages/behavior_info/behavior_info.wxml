@@ -1,0 +1,37 @@
+<view class="container">
+  <view class="title">行为信息</view>
+  <view class="swipe-tab-container">
+    <view class="swipe-tab-item {{currentTab == 0 ? 'on' : ''}}" data-current="0" bindtap="switchGraph">
+      睡眠
+    </view>
+    <view class="swipe-tab-item {{currentTab == 1 ? 'on' : ''}}" data-current="1" bindtap="switchGraph">
+      离家
+    </view>
+    <view class="swipe-tab-item {{currentTab == 2 ? 'on' : ''}}" data-current="2" bindtap="switchGraph">
+      洗漱
+    </view>
+    <view class="swipe-tab-item {{currentTab == 3 ? 'on' : ''}}" data-current="3" bindtap="switchGraph">
+      用餐
+    </view>
+    <view class="swipe-tab-item {{currentTab == 4 ? 'on' : ''}}" data-current="4" bindtap="switchGraph">
+      如厕
+    </view>
+  </view>
+  <swiper class="swipe-box" indicator-dots="{{false}}" autoplay="{{false}}" current="{{currentTab}}" duration="{{500}}" bindchange="swipeGraph">
+    <swiper-item>
+      <view>睡眠信息</view>
+    </swiper-item>
+    <swiper-item>
+      <view>离家信息</view>
+    </swiper-item>
+    <swiper-item>
+      <view>洗漱信息</view>
+    </swiper-item>
+    <swiper-item>
+      <view>用餐信息</view>
+    </swiper-item>
+    <swiper-item>
+      <view>如厕信息</view>
+    </swiper-item>
+  </swiper>
+</view>

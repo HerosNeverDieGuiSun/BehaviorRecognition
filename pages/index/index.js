@@ -10,7 +10,7 @@ Page({
     warningCount: 100,
     cognitionState: true
   },
-  onShow: function(e) {
+  onLoad: function(e) {
     let interval = 1000 / this.data.warningCount;
     let currentDisplayCount = -1;
     let destinationCount = this.data.warningCount;
@@ -21,6 +21,13 @@ Page({
         });
       }
     }, interval);
+  },
+  // Navigate to corresponding pages
+  showInfoPage: function(e) {
+    let destination = e.currentTarget.dataset.url;
+    wx.navigateTo({
+      url: `../${destination}/${destination}`
+    });
   }
 });
 

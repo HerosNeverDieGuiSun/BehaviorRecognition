@@ -1,5 +1,11 @@
 {
-  "pages": ["pages/login/login", "pages/index/index", "pages/line/line"],
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/line/line",
+    "pages/environment_info/environment_info",
+    "pages/behavior_info/behavior_info"
+  ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
