@@ -1,24 +1,24 @@
-import * as echarts from "../../ec-canvas/echarts";
+import * as echarts from '../../ec-canvas/echarts';
 
 const app = getApp();
-// Current time interval object
+// 当前计时器
 let currentInterval;
-// Global chart
+// 全局图表对象
 let chart;
-// Chart option
+// 全局图表配置
 let options = [
-  // 1 Water Flow Graph options
+  // 0 水流折线图
   {
     xAxis: {
-      type: "time",
-      name: "时间",
+      type: 'time',
+      name: '时间',
       splitLine: {
         show: false
       }
     },
     yAxis: {
-      type: "value",
-      name: "流速 L/min",
+      type: 'value',
+      name: '流速 L/min',
       splitLine: {
         show: false
       }
@@ -26,22 +26,25 @@ let options = [
     series: [
       {
         data: [],
-        type: "line"
+        type: 'line',
+        label: {
+          show: true
+        }
       }
     ]
   },
-  // 2 Pressure Graph Options
+  // 1 压力折线图
   {
     xAxis: {
-      type: "time",
-      name: "时间",
+      type: 'time',
+      name: '时间',
       splitLine: {
         show: false
       }
     },
     yAxis: {
-      type: "value",
-      name: "压力 L/min",
+      type: 'value',
+      name: '压力 ',
       splitLine: {
         show: false
       }
@@ -49,7 +52,47 @@ let options = [
     series: [
       {
         data: [],
-        type: "line"
+        type: 'line',
+        label: {
+          show: true
+        }
+      }
+    ]
+  },
+  // 2 温度折线图
+  {
+    xAxis: {
+      type: 'time',
+      name: '时间',
+      splitLine: {
+        show: false
+      }
+    },
+    yAxis: {
+      type: 'value',
+      name: '温度 C',
+      splitLine: {
+        show: false
+      }
+    },
+    series: [
+      {
+        data: [
+          { value: ['2019/03/20 00:00', 19] },
+          { value: ['2019/03/20 01:00', 18] },
+          { value: ['2019/03/20 02:00', 17] },
+          { value: ['2019/03/20 03:00', 16] },
+          { value: ['2019/03/20 04:00', 17] },
+          { value: ['2019/03/20 05:00', 18] },
+          { value: ['2019/03/20 06:00', 19] },
+          { value: ['2019/03/20 07:00', 20] },
+          { value: ['2019/03/20 08:00', 22] },
+          { value: ['2019/03/20 09:00', 24] }
+        ],
+        type: 'line',
+        label: {
+          show: true
+        }
       }
     ]
   }
@@ -63,6 +106,7 @@ Page({
     currentTab: 0
   },
   onShow: function(e) {
+    initData(this.data.currentTab);
     currentInterval = setInterval(() => {
       let data = options[this.data.currentTab].series[0].data;
       if (data.length > 10) {
@@ -78,12 +122,20 @@ Page({
       });
     }, 1000);
   },
-  // Switch tab on click
+
+  /**
+   * 当切换标签时触发，切换成不同的图表，重新获取数据
+   */
   switchGraph: function(e) {
     clearInterval(currentInterval);
     this.setData({
       currentTab: e.currentTarget.dataset.current
     });
+    if (this.data.currentTab !== 0 && this.data.currentTab !== 1) {
+      chart.setOption(options[this.data.currentTab]);
+      return;
+    }
+    initData(this.data.currentTab);
     chart.setOption(options[this.data.currentTab]);
     currentInterval = setInterval(() => {
       let data = options[this.data.currentTab].series[0].data;
@@ -114,10 +166,31 @@ function initChart(canvas, width, height) {
   return chart;
 }
 
+/**
+ * 在当前时间点的前10秒随机生成10个模拟数据
+ * @param currentTab 当前标签序号
+ */
+function initData(currentTab, here) {
+  options[currentTab].series[0].data.length = 0;
+
+  let now = new Date();
+  for (let i = 10; i > 0; i--) {
+    let dataTime = new Date(now);
+    dataTime.setSeconds(dataTime.getSeconds() - i);
+    options[currentTab].series[0].data.push({
+      name: dataTime.toString(),
+      value: [dataTime.getTime(), Math.round(Math.random() * 1000)]
+    });
+  }
+}
+
+/**
+ * 在当前时间点随机生成一个数值构成坐标点
+ */
 function generateData() {
   let now = new Date();
   return {
     name: now.toString(),
-    value: [now.getTime(), Math.random() * 1000]
+    value: [now.getTime(), Math.round(Math.random() * 1000)]
   };
 }

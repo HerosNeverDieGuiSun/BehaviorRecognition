@@ -1,18 +1,18 @@
 <view class="container">
   <view class="tab-container">
-    <view class="tab-item {{currentTab == 0 ? 'on' : ''}}" data-current="0" bindtap="switchGraph">
+    <view class="tab-item {{currentTab == 0 ? 'on' : ''}}" data-current="{{0}}" bindtap="switchGraph">
       水流
     </view>
-    <view class="tab-item {{currentTab == 1 ? 'on' : ''}}" data-current="1" bindtap="switchGraph">
+    <view class="tab-item {{currentTab == 1 ? 'on' : ''}}" data-current="{{1}}" bindtap="switchGraph">
       压力
     </view>
-    <view class="tab-item {{currentTab == 2 ? 'on' : ''}}" data-current="2" bindtap="switchGraph">
+    <view class="tab-item {{currentTab == 2 ? 'on' : ''}}" data-current="{{2}}" bindtap="switchGraph">
       温度
     </view>
-    <view class="tab-item {{currentTab == 3 ? 'on' : ''}}" data-current="3" bindtap="switchGraph">
+    <view class="tab-item {{currentTab == 3 ? 'on' : ''}}" data-current="{{3}}" bindtap="switchGraph">
       湿度
     </view>
-    <view class="tab-item {{currentTab == 4 ? 'on' : ''}}" data-current="4" bindtap="switchGraph">
+    <view class="tab-item {{currentTab == 4 ? 'on' : ''}}" data-current="{{4}}" bindtap="switchGraph">
       门磁
     </view>
   </view>
