@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view>
+  <view class="username">
+    <van-field value="{{ username }}" bindchange="changeusername"clearable label="用户名" placeholder="请输入用户名"/>
+  </view>
+  <view class="showSexAndDate">
+    <picker  bindchange="bindPickerChange" value="{{index}}" range="{{Sexarray}}">
+      <van-field value="{{ sex }}" clearable label="性别" readonly placeholder="请选择性别"/>
+    </picker>
+    <picker mode="date" value="{{date}}" start="1900-01-01" end="2022-01-01" bindchange="bindDateChange">
+      <van-field value="{{ date }}" clearable label="生日" readonly placeholder="请选择生日"/>
+    </picker>
+  </view>
+  <view class="showHeightAndWeight">
+    <van-field value="{{ height }}" bindchange="changeheight" bind:blur="errorheightjudge" error-message="{{errorheight}}" clearable label="身高" placeholder="请输入身高(米）"/>
+    <van-field value="{{ weight }}" bindchange="changeweight" bind:blur="errorweightjudge" error-message="{{errorweight}}" clearable label="体重" placeholder="请输入体重（千克）"/>
+  </view>
+  <view class="save">
+    <van-button size="large" bindclick="saveInfo">保存</van-button>
+  </view>
+
+  <!-- 
+  <view class="height">
+  <van-field value="{{array[index]}}" clearable label="性别" placeholder="请选择性别"/>
+  <van-button class="showSex" type="default" bindclick="changeShowSex">性别选择</van-button>
+  </view>
+  <picker wx-if="{{showSex}}" bindchange="bindPickerChange" value="{{index}}" range="{{array}}"></picker>
+  -->
+</view>

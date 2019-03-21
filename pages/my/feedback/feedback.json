@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "ec-canvas": "../../../ec-canvas/ec-canvas",
+    "van-cell": "../../../dist/cell/index",
+    "van-field":"../../../dist/field/index",
+    "van-cell-group":"../../../dist/cell-group/index",
+    "van-button":"../../../dist/button/index",
+    "van-notify": "../../../dist/notify/index",
+    "van-toast": "../../../dist/toast/index"
+  }
+}

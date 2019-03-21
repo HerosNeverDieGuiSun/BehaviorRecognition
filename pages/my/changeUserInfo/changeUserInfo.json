@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "ec-canvas": "../../../ec-canvas/ec-canvas",
+    "van-cell": "../../../dist/cell/index",
+    "van-field": "../../../dist/field/index",
+    "van-picker": "../../../dist/picker/index",
+    "van-button": "../../../dist/button/index",
+    "van-datetime-picker": "../../../dist/datetime-picker/index"
+  }
+}

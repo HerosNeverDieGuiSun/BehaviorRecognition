@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view>
+  <view class="head">
+    <van-cell title="用户名" value="我是一只小猪猪" size="large"/>
+  </view>
+  <view class="head">
+    <van-cell title="生日" value="1998/1/11" size="large"/>
+    <van-cell title="性别" value="男" size="large"/>
+  </view>
+  <view class="head">
+    <van-cell title="身高" value="1.75m" size="large"/>
+    <van-cell title="体重" value="60kg" size="large"/>
+  </view>
+</view>

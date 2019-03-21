@@ -2,10 +2,16 @@
   "pages": [
     "pages/login/login",
     "pages/index/index",
-    "pages/line/line",
     "pages/environment_info/environment_info",
-    "pages/behavior_info/behavior_info"
+    "pages/behavior_info/behavior_info",
+    "pages/my/info/info",
+    "pages/my/showUserInfo/showUserInfo",
+    "pages/my/changeUserInfo/changeUserInfo",
+    "pages/my/oldinfo/oldinfo",
+    "pages/my/feedback/feedback",
+    "pages/my/version/version"
   ],
+
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
@@ -26,7 +32,7 @@
       },
       {
         "text": "我的",
-        "pagePath": "pages/line/line",
+        "pagePath": "pages/my/info/info",
         "iconPath": "images/profile.png",
         "selectedIconPath": "images/profile-active.png"
       }

@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view>
+  <view class="head">
+    <van-cell-group>
+      <van-field value="{{ message }}" label="意见反馈" type="textarea" placeholder="请输入留言" autosize border="{{ false }}"/>
+    </van-cell-group>
+  </view>
+  <view class="head">
+    <van-button size="large" bindclick="submmit">提交</van-button>
+  </view>
+</view>

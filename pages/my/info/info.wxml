@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view>
+  <view class="oldinfo">
+    <van-cell title="老人基本信息" url="/pages/my/oldinfo/oldinfo" is-link/>
+  </view>
+  <view class="userinfo">
+  <van-cell title="个人信息" url="/pages/my/showUserInfo/showUserInfo" is-link 	/>
+  <van-cell title="修改信息" url="/pages/my/changeUserInfo/changeUserInfo" is-link/>
+  </view>
+  <view>
+  <van-cell title="意见反馈" url="/pages/my/feedback/feedback" is-link/>
+  <van-cell title="版本信息"  url="/pages/my/version/version" is-link/>
+  </view>
+</view>
+
