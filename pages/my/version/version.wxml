@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view>
+  <view class="head">
+    <van-cell title="版本号" value="v 1.0 " size="large"/>
+  </view>
+</view>

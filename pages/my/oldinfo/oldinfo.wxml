@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view>
+  <view class="head">
+    <van-cell title="姓名" value="大猪猪" size="large"/>
+  </view>
+  <view class="head">
+    <van-cell title="生日" value="1998/1/11" size="large"/>
+    <van-cell title="性别" value="男" size="large"/>
+    <van-cell title="电话" value="18555555555" size="large"/>
+    <van-cell title="地址" value="合肥工业大学" size="large"/>
+  </view>
+  <view class="head">
+    <van-cell title="护理等级" value="严重" size="large"/>
+    <van-cell title="床号" value="1号" size="large"/>
+  </view>
+</view>
