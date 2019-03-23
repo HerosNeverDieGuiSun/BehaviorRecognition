@@ -10,6 +10,7 @@ Page({
       success: function(res) {
         if (res.authSetting["scope.userInfo"]) {
           wx.getUserInfo({
+            lang:"zh_CN",
             success: function(res) {
               //从数据库获取用户信息
               // that.queryUsreInfo();

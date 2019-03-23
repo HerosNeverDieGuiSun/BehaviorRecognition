@@ -1,5 +1,10 @@
 <!--index.wxml-->
 <view>
+  <view class="showimage">
+    <view class="nickname">{{nickname}}</view>
+    <image class="image"  background-size="cover" src="{{imageurl}}"/>
+    <view class="city">{{province}}   {{city}}</view>
+  </view>
   <view class="oldinfo">
     <van-cell title="老人基本信息" url="/pages/my/oldinfo/oldinfo" is-link/>
   </view>
