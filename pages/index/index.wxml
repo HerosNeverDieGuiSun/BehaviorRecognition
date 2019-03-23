@@ -49,9 +49,5 @@
         <image class="image" src="/images/rate.png" />
       </view>
     </view>
-    <view class="row">
-      <view class="button-block orange"></view>
-      <view class="button-block yellow"></view>
-    </view>
   </view>
 </view>

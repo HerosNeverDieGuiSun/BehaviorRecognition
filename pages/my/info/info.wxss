@@ -11,3 +11,31 @@ page {
   margin: 40rpx 0;
   background-color: rgb(254, 254, 254);
 }
+.showimage {
+  margin: 80rpx 0 40rpx 0;
+  background-color: rgb(254, 254, 254);
+  height: 100rpx;
+}
+.nickname {
+  position: relative;
+  left: 210rpx;
+  top: -40rpx;
+  font-size: 32rpx;
+  color: #333333;
+}
+.image {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  position: relative;
+  left: 30rpx;
+  top: -120rpx;
+}
+.city {
+  font-size: 27rpx;
+  color: #666666	;
+  position: relative;
+  left: 210rpx;
+  top: -200rpx;
+}
