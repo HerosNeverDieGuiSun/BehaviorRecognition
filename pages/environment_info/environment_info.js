@@ -95,6 +95,43 @@ let options = [
         }
       }
     ]
+  },
+  // 3 湿度折线图
+  {
+    xAxis: {
+      type: 'time',
+      name: '时间',
+      splitLine: {
+        show: false
+      }
+    },
+    yAxis: {
+      type: 'value',
+      name: '湿度 %RH',
+      splitLine: {
+        show: false
+      }
+    },
+    series: [
+      {
+        data: [
+          { value: ['2019/03/20 00:00', 50] },
+          { value: ['2019/03/20 01:00', 43] },
+          { value: ['2019/03/20 02:00', 42] },
+          { value: ['2019/03/20 03:00', 40] },
+          { value: ['2019/03/20 04:00', 37] },
+          { value: ['2019/03/20 05:00', 38] },
+          { value: ['2019/03/20 06:00', 45] },
+          { value: ['2019/03/20 07:00', 50] },
+          { value: ['2019/03/20 08:00', 52] },
+          { value: ['2019/03/20 09:00', 60] }
+        ],
+        type: 'line',
+        label: {
+          show: true
+        }
+      }
+    ]
   }
 ];
 
@@ -106,6 +143,7 @@ Page({
     currentTab: 0
   },
   onShow: function(e) {
+    clearInterval(currentInterval);
     initData(this.data.currentTab);
     currentInterval = setInterval(() => {
       let data = options[this.data.currentTab].series[0].data;
