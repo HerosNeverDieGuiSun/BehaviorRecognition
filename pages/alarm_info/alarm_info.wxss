@@ -1,0 +1,33 @@
+.pie {
+  height: 500rpx;
+  width: 100%;
+}
+.container .title {
+  line-height: 80rpx;
+  text-align: center;
+  color: #666;
+  background-color: rgb(254, 254, 254);
+}
+
+.swipe-tab-container {
+  width: 100%;
+  border-bottom: 2rpx solid #777;
+  border-top: 2rpx solid #777;
+  line-height: 80rpx;
+  text-align: center;
+  white-space: nowrap;
+  box-shadow: 2px 2px 2px #eee;
+  background-color: rgb(254, 254, 254);
+}
+
+.swipe-tab-container .swipe-tab-item {
+  display: inline-block;
+  width: 150rpx;
+  font-size: 30rpx;
+  color: #aaa;
+}
+
+.swipe-tab-container .swipe-tab-item.on {
+  border-bottom: 5rpx solid #da7c0c;
+  color: #da7c0c;
+}

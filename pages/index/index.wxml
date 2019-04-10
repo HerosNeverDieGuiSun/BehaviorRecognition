@@ -38,7 +38,7 @@
       </view>
     </view>
     <view class="row">
-      <view class="button-block green">
+      <view class="button-block green" bindtap="showInfoPage" data-url="alarm_info">
         <view class="button-text">报警信息</view>
         <view class="detail">门磁报警、水流报警、煤气报警</view>
         <image class="image" src="/images/alert.png" />

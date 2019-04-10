@@ -9,7 +9,8 @@
     "pages/my/changeUserInfo/changeUserInfo",
     "pages/my/oldinfo/oldinfo",
     "pages/my/feedback/feedback",
-    "pages/my/version/version"
+    "pages/my/version/version",
+    "pages/alarm_info/alarm_info"
   ],
 
   "window": {
