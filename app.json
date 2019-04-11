@@ -10,7 +10,8 @@
     "pages/my/oldinfo/oldinfo",
     "pages/my/feedback/feedback",
     "pages/my/version/version",
-    "pages/alarm_info/alarm_info"
+    "pages/alarm_info/alarm_info",
+    "pages/score_info/score_info"
   ],
 
   "window": {

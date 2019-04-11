@@ -43,7 +43,7 @@
         <view class="detail">门磁报警、水流报警、煤气报警</view>
         <image class="image" src="/images/alert.png" />
       </view>
-      <view class="button-block light-green">
+      <view class="button-block light-green" bindtap="showInfoPage" data-url="score_info">
         <view class="button-text">评分详情</view>
         <view class="detail">每日评分、评分状态</view>
         <image class="image" src="/images/rate.png" />

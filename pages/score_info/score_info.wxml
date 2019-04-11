@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="script">评分统计</view>
+  <view class="main-container">
+    <ec-canvas class="info-graph" ec="{{ ec }}"></ec-canvas>    
+  </view>
+</view>
+

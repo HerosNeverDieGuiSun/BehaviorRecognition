@@ -1,18 +1,18 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="swipe-tab-container">
-    <view class="swipe-tab-item {{currentTab == 0 ? 'on' : ''}}" data-current="{{0}}" bindtap="switchGraph">
+  <view class="tab-container">
+    <view class="tab-item {{currentTab == 0 ? 'on' : ''}}" data-current="{{0}}" bindtap="switchGraph">
       睡眠
     </view>
-    <view class="swipe-tab-item {{currentTab == 1 ? 'on' : ''}}" data-current="{{1}}" bindtap="switchGraph">
+    <view class="tab-item {{currentTab == 1 ? 'on' : ''}}" data-current="{{1}}" bindtap="switchGraph">
       离家
     </view>
-    <view class="swipe-tab-item {{currentTab == 2 ? 'on' : ''}}" data-current="{{2}}" bindtap="switchGraph">
+    <view class="tab-item {{currentTab == 2 ? 'on' : ''}}" data-current="{{2}}" bindtap="switchGraph">
       洗漱
     </view>
   </view>
-  <view class="pie">
-    <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}" bind:init="echartInit"></ec-canvas>
+  <view class="main-container">
+    <ec-canvas class="info-graph" ec="{{ ec }}"></ec-canvas>    
   </view>
 </view>
 
