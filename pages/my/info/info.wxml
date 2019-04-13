@@ -10,7 +10,6 @@
   </view>
   <view class="userinfo">
   <van-cell title="个人信息" url="/pages/my/showUserInfo/showUserInfo" is-link 	/>
-  <van-cell title="修改信息" url="/pages/my/changeUserInfo/changeUserInfo" is-link/>
   </view>
   <view>
   <van-cell title="意见反馈" url="/pages/my/feedback/feedback" is-link/>

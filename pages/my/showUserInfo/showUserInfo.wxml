@@ -11,4 +11,7 @@
     <van-cell title="身高" value="1.75m" size="large"/>
     <van-cell title="体重" value="60kg" size="large"/>
   </view>
+  <view class="head">
+      <van-cell title="修改信息" url="/pages/my/changeUserInfo/changeUserInfo" is-link/>
+  </view>
 </view>
